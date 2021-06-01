@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="root"></div>
+
+  <div id="react-container">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script>
+      const dish = React.createElement(
+        "section",
+        {"id": "list"},
+        React.createElement('h1', null, 'Lista de Frutas'),
+        React.createElement(
+          'ul',
+          null,
+          React.createElement('li', null, 'Banana'),
+          React.createElement('li', null, 'Laranja'),
+          React.createElement('li', null, 'Maçã'),
+          React.createElement('li', null, 'Pêra'),
+          React.createElement('li', null, 'Uva'),
+          React.createElement('li', null, 'Manga')
+        ),
+        React.createElement('h1', null, 'Lista de Pessoas'),
+        React.createElement(
+          'ul',
+          null,
+          React.createElement('li', null, 'Renata'),
+          React.createElement('li', null, 'Juliana'),
+          React.createElement('li', null, 'Márcia'),
+          React.createElement('li', null, 'Pedrita'),
+          React.createElement('li', null, 'Sueli'),
+          React.createElement('li', null, 'Danielli')
+        ));
+      
+      ReactDOM.render(dish, document.getElementById('react-container'));
+      console.log('dish:', dish);
+      
+    </script>
+  </div>
+</body>
+
+</html>

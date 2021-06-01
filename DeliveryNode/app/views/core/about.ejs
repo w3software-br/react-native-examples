@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- <style>
+    footer {
+      position: fixed;
+      bottom:0;
+      left:0;
+      right: 0;
+    } -->
+  </style>
+  <script src="./app.js"></script>
+
+  <!-- pwa -->
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="core/images/system-images/icons/apple-icon-120.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
+  <meta name="theme-color" content="#FFE1C4">
+  <style>
+  
+    #enable-banner-install{
+      display: none;
+      margin: 5px;
+    }
+    
+  </style>
+  <title>Web Delivery 1.0</title>
+
+  <%-include('include/top-links.ejs')%>
+
+</head>
+
+<body onload="ShopingCart.verify(); installButton();">
+  <div class="container-fluid">
+    <!-- Navigation -->
+    <%-include('include/nav-bar.ejs')%>
+    <br>
+    <div class="card">
+
+      <div class="card-head">
+        <%include('include/logo.ejs')%>
+      </div>
+
+      <div class="card-body">
+        
+        <button class="btn btn-info" id="enable-banner-install">
+          Instalar
+        </button>
+
+        <br>
+
+        <div class="container">
+
+          <h1 class="container text-center c3">Manual de Instruções</h1>
+          <hr>
+          <div class="row">
+
+
+            <div class="col-sm-3">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link card text-center c2" href="#"
+                  onclick="Manual.getContent(1);">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link card text-center c2" href="#"
+                  onclick="Manual.getContent(2);">Gerenciar Produtos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link card text-center c2" href="#"
+                  onclick="Manual.getContent(3);">Bairros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link card text-center c2" href="#"
+                  onclick="Manual.getContent(4);">Banners</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link card text-center c2" href="#"
+                  onclick="Manual.getContent(5);">Pedidos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link card text-center c2" href="#"
+                  onclick="Manual.getContent(6);">Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link card text-center c2" href="#"
+                  onclick="Manual.getContent(7);">Entregadores</a>
+                </li>
+                
+              </ul>
+            </div>
+            <hr>
+            <!-- content -->
+            <div class="col-sm-9 c3" style="display: block" id="1">
+              <h2 class="text-center">Home</h2>
+              <div class="content text-left">
+                <p>Olá visitante! Meu nome é Adriano Oliveira e eu sou Analista de 
+                  Sistemas. Nesse pequeno manual, vou mostrar a você as principais 
+                  funcionalidades do sistema <strong>Web Delivery 1.0</strong>.
+                </p>
+                <p>
+                  Esse sistema pode ser acessado normalmente via navegador como qualquer site. Mas, 
+                  não é só isso. Você também pode instalar em um computador <strong>Windows</strong>, 
+                  <strong>Linux</strong> ou <strong>Mac</strong> 
+                  de forma bastante simples e amigável. 
+                </p>
+                <p>Além disso, ele é instalável em dispositivos 
+                  móveis <strong>Android</strong> e <strong>IOS</strong>.</p>
+                <p>Para saber mais, assista <a href="#" target="_blank">esse vídeo.</a></p>
+              </div>
+            </div>
+            <div class="col-sm-9 c3" style="display: none" id="2">
+              Categories and Products
+            </div>
+            <div class="col-sm-9 c3" style="display: none" id="3">
+              Neighborhoods
+            </div>
+            <div class="col-sm-9 c3" style="display: none" id="4">
+              Banners
+            </div>
+            <div class="col-sm-9 c3" style="display: none" id="5">
+              Orders
+            </div>
+            <div class="col-sm-9 c3" style="display: none" id="6">
+              Clientes
+            </div>
+            <div class="col-sm-9 c3" style="display: none" id="7">
+              Deliverymans
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="card-footer text-center">
+        
+        w3software.br@gmail.com
+
+      </div>
+
+    </div>
+
+    <%-include('include/bottom-links.ejs')%>
+
+    <a href="/user-whatsapp-message"" title="Fale Conosco" class="wa-logo">
+      <img src="admin/images/whatsapp.png" alt="offline" width="50px">
+    </a>
+        
+  </div>
+
+  <br>
+
+  <%-include('include/footer.ejs')%>
+
+  <script src="core/core.js"></script>
+
+</body>
+
+</html>

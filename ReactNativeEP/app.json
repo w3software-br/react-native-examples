@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "English Phrases",
+    "slug": "snack-a0604301-c32b-459c-8457-b07574d13e83",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ddd"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "br.net.w3software",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "br.net.w3software",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

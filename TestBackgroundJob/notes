@@ -1,0 +1,18 @@
+Background Job:
+  api: https://github.com/vikeri/react-native-background-job // The jobs will run even if the app has been closed and, by default, also persists over restarts.
+
+  AndroidManifest.xml: 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+  MainApplication.java:
+    Add import com.pilloxa.backgroundjob.BackgroundJobPackage;
+    // Doesn't works => Add new BackgroundJobPackage() to the list returned by the getPackages() method. 
+
+  android/settings.gradle:
+    include ':react-native-background-job'
+    project(':react-native-background-job').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-background-job/android')
+
+
+
+https://github.com/jamesisaac/react-native-background-task
+https://github.com/transistorsoft/react-native-background-fetch

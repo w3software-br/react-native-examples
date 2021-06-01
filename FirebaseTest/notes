@@ -1,0 +1,5 @@
+npm install --save firebase
+fix error:
+In order to use firebase api i go back the the node version 10
+
+next step -> https://firebase.google.com/docs/database/android/structure-data?authuser=0

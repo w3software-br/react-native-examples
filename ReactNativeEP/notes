@@ -1,0 +1,6 @@
+clean cache: expo r -c
+apk: https://expo.io/artifacts/af955644-55a5-462a-aaca-b07e5d18b6fc
+
+descoer your local ip: hostname -I
+
+mysql backup: mysqldump -u adriano -p epapi > epapi.sql;

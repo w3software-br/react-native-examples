@@ -1,0 +1,1 @@
+I found this example in https://github.com/expo/examples/tree/master/with-sqlite

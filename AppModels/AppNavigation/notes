@@ -1,0 +1,3 @@
+clean cache: expo r -c
+apk: https://expo.io/artifacts/af955644-55a5-462a-aaca-b07e5d18b6fc
+snack-a0604301-c32b-459c-8457-b07574d13e83-16b48217c9504335bdeb9419b0e20b3c-signed.apk
